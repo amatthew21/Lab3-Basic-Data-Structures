@@ -4,7 +4,7 @@ import java.util.*;
 
 public class TestCollection {
   public static void main(String[] args) {
-    LinkedList<String> collection1 = new LinkedList<>();
+    Stack<String> collection1 = new Stack<>();
     collection1.add("New York"); 
     collection1.add("Atlanta"); 
     collection1.add("Dallas"); 
@@ -22,7 +22,7 @@ public class TestCollection {
     System.out.println("\n" + collection1.size() + 
        " cities are in collection1 now");
 
-    Collection<String> collection2 = new ArrayList<>();
+    Collection<String> collection2 = new Stack<>();
     collection2.add("Seattle"); 
     collection2.add("Portland"); 
     collection2.add("Los Angles"); 
@@ -33,17 +33,17 @@ public class TestCollection {
     System.out.println("\nA list of cities in collection2:");
     System.out.println(collection2);
 
-    LinkedList<String> c1 = (LinkedList<String>)(collection1.clone());
+    Stack<String> c1 = (Stack<String>)(collection1.clone());
     c1.addAll(collection2); // Add all elements in collection2 to c1
     System.out.println("\nCities in collection1 or collection2: ");
     System.out.println(c1);
 
-    c1 = (LinkedList<String>)(collection1.clone());
+    c1 = (Stack<String>)(collection1.clone());
     c1.retainAll(collection2);
     System.out.print("\nCities in collection1 and collection2: ");
     System.out.println(c1);
 
-    c1 = (LinkedList<String>)(collection1.clone());
+    c1 = (Stack<String>)(collection1.clone());
     c1.removeAll(collection2);
     System.out.print("\nCities in collection1, but not in 2: ");
     System.out.println(c1);

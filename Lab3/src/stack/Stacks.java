@@ -35,7 +35,7 @@ public class Stacks {
 		
 		System.out.println();
 		//Integer Stack
-		
+		//Adding this to test pain
 		System.out.println("Integer Stack Methods:");
 		System.out.println("Is this stack of Integers empty?: " + intStack.isEmpty());
 		System.out.println();
